@@ -20,8 +20,8 @@
     "dialect": "mysql"
   },
   "production": {
-    "appUrl": "https://zemoga-node-test.herokuapp.com",
-    "appPort": 5000,
+    "appUrl": "zemoga-node-test.herokuapp.com",
+    "appPort": "",
     "username": "zemoga_test_db",
     "password": "Zem0ga.101",
     "database": "portfolioDB",
