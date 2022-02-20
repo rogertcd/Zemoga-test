@@ -20,7 +20,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "appUrl": "localhost",
+    "appUrl": "https://zemoga-node-test.herokuapp.com",
     "appPort": 5000,
     "username": "zemoga_test_db",
     "password": "Zem0ga.101",
