@@ -1,7 +1,6 @@
 {
   "development": {
     "appUrl": "localhost",
-    "appPort": 3000,
     "username": "zemoga_test_db",
     "password": "Zem0ga.101",
     "database": "portfolioDB",
@@ -11,7 +10,6 @@
   },
   "test": {
     "appUrl": "localhost",
-    "appPort": 5000,
     "username": "zemoga_test_db",
     "password": "Zem0ga.101",
     "database": "portfolioDB",
@@ -21,7 +19,6 @@
   },
   "production": {
     "appUrl": "zemoga-node-test.herokuapp.com",
-    "appPort": "",
     "username": "zemoga_test_db",
     "password": "Zem0ga.101",
     "database": "portfolioDB",
