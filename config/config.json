@@ -11,7 +11,7 @@
   },
   "test": {
     "appUrl": "localhost",
-    "appPort": 3000,
+    "appPort": 5000,
     "username": "zemoga_test_db",
     "password": "Zem0ga.101",
     "database": "portfolioDB",
@@ -21,7 +21,7 @@
   },
   "production": {
     "appUrl": "localhost",
-    "appPort": 3000,
+    "appPort": 5000,
     "username": "zemoga_test_db",
     "password": "Zem0ga.101",
     "database": "portfolioDB",
