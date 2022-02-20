@@ -1,0 +1,9 @@
+<div class="list-group">
+    {{#each users}}
+<!--        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">-->
+<!--            -->
+<!--        </a>-->
+        <a href="/profile/{{ this.id }}/{{ this.twitter_user }}" class="list-group-item list-group-item-action">{{ this.name }}</a>
+    {{/each}}
+
+</div>

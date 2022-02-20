@@ -1,0 +1,32 @@
+{
+  "development": {
+    "appUrl": "localhost",
+    "appPort": 3000,
+    "username": "zemoga_test_db",
+    "password": "Zem0ga.101",
+    "database": "portfolioDB",
+    "host": "zemoga-test-db.crhpedy9xxto.us-east-1.rds.amazonaws.com",
+    "dbPort": 3306,
+    "dialect": "mysql"
+  },
+  "test": {
+    "appUrl": "localhost",
+    "appPort": 3000,
+    "username": "zemoga_test_db",
+    "password": "Zem0ga.101",
+    "database": "portfolioDB",
+    "host": "zemoga-test-db.crhpedy9xxto.us-east-1.rds.amazonaws.com",
+    "dbPort": 3306,
+    "dialect": "mysql"
+  },
+  "production": {
+    "appUrl": "localhost",
+    "appPort": 3000,
+    "username": "zemoga_test_db",
+    "password": "Zem0ga.101",
+    "database": "portfolioDB",
+    "host": "zemoga-test-db.crhpedy9xxto.us-east-1.rds.amazonaws.com",
+    "dbPort": 3306,
+    "dialect": "mysql"
+  }
+}

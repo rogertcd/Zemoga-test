@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="card" >
+        <img src="{{ user.image_path }}" class="img-fluid rounded mx-auto d-block" alt="{{ user.name }}">
+        <div class="card-body">
+            <h5 class="card-title">{{ user.name }}</h5>
+            <p class="card-text">{{ user.experience }}</p>
+        </div>
+<!--        <ul class="list-group list-group-flush">-->
+<!--            <li class="list-group-item">Twitter</li>-->
+            <div class="panel panel-default">
+                <div class="panel-heading text-black"><h3><b>{{ user.name }}'s Timeline</b></h3></div>
+                <div class="panel-body">
+                    {{#each tweets}}
+                        <div class="card mb-3">
+                            <img src="{{ profile_image_url }}" class="img-fluid rounded mx-auto d-block" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ name }}</h5>
+                                <p class="card-text">{{ text }}</p>
+                                <p class="card-text"><small class="text-muted">{{ location }}</small></p>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+<!--        </ul>-->
+        <div class="card-body">
+            <a href="https://www.twitter.com/{{ user.twitter_user }}" class="btn btn-primary">Ir al perfil</a>
+        </div>
+    </div>
+</div>
