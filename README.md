@@ -45,6 +45,7 @@ Or
  Two end points developed in Node.js using Express that connects to DynamoDB AWS throught to aws-sdk
 
 > /api/portfolio/update/
+
 > /api/portfolio/find/
 
 The first is for UPDATE data from a user of portfolio and the second is just for get the data from a user.
