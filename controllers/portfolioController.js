@@ -13,18 +13,18 @@ const TABLE_NAME = 'portfolio';
 
 exports.createOrUpdate = async (req, res) => {
     const idPortfolio = req.body.id;
-    console.log('idPortfolio', idPortfolio, 'params', req.headers.id);
-    if (idPortfolio !== '') {
+    // console.log('idPortfolio', idPortfolio, 'params', req.headers.id);
+    if (idPortfolio !== '' && req.body.name !== undefined && req.body.twitterUser !== undefined) {
         const newItem = {
             "id": idPortfolio,
-            "experience": req.body.experience,
-            "imagePath": req.body.imagePath,
+            "experience": (req.body.experience === undefined) ? '' : req.body.experience,
+            "imagePath": (req.body.imagePath === undefined) ? '' : req.body.imagePath,
             "name": req.body.name,
             "twitterUser": req.body.twitterUser,
-            "email": req.body.email,
-            "address": req.body.address,
-            "phone": req.body.phone,
-            "zipCode": req.body.zipCode
+            "email": (req.body.email === undefined) ? '' : req.body.email,
+            "address": (req.body.address === undefined) ? '' : req.body.address,
+            "phone": (req.body.phone === undefined) ? '' : req.body.phone,
+            "zipCode": (req.body.zipCode === undefined) ? '' : req.body.zipCode
         }
         const params = {
             TableName: TABLE_NAME,
@@ -33,7 +33,7 @@ exports.createOrUpdate = async (req, res) => {
         let respuesta = await dynamoClient.put(params).promise();
         response.success(req, res, respuesta, 200);
     } else {
-        response.error(req, res, "Debe introducir un ID", 401);
+        response.error(req, res, "Datos no válidos", 401);
     }
 };
 
