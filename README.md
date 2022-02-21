@@ -56,4 +56,4 @@ Developed in Node.js using Express for backend and Express-Handlebars like templ
 
 ## Develop time
 
-50 hours approximately
+24 hours approximately
