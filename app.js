@@ -37,10 +37,6 @@ app.set('views', path.join(__dirname, '/public/views'));
 app.use("/apidoc", express.static(__dirname + '/public/apidoc'));
 app.use("/bootstrap", express.static(__dirname + '/node_modules/bootstrap/dist'));
 
-// app.get('*', (req, res) => res.status(200).send({
-//     message: 'Welcome to the beginning of nothingness.',
-// }));
-
 const port = parseInt(process.env.PORT, 10) || 5000;
 app.set('port', port);
 const server = http.createServer(app);
