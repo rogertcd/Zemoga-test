@@ -1,9 +1,10 @@
 const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
+require('dotenv').config();
 const path = require('path');
-const env = process.env.NODE_ENV || 'development';
-const config = require('./config/config.json')[ env ];
+// const env = process.env.NODE_ENV || 'development';
+// const config = require('./config/config.json')[ env ];
 const { engine } = require('express-handlebars');
 const portfolioRoutes = require('./routes/portfolioRoutes');
 const profileRoutes = require('./routes/profileRoutes');
@@ -42,7 +43,7 @@ app.set('port', port);
 const server = http.createServer(app);
 // server.listen(port);
 server.listen(port, () => {
-    console.log(`La app está funcionando en http://${config.appUrl}:${port}`);
+    console.log(`La app está funcionando en http://${process.env.APP_URL}:${port}`);
 });
 
 module.exports = app;
