@@ -12,7 +12,6 @@ const dynamoClient = new AWS.DynamoDB.DocumentClient();
 const TABLE_NAME = 'portfolio';
 
 exports.createOrUpdate = async (req, res, next) => {
-    // console.log('idPortfolio', idPortfolio, 'params', req.headers.id);
     try{
         if ((req.body.id !== undefined && req.body.id !== '') && req.body.name !== undefined && req.body.twitterUser !== undefined) {
             const newItem = {
